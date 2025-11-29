@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indeco - Ingeniería Civil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logos/LOGO-INDECO500.png" alt="Indeco" style="height: 50px; width: auto;">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#quienes-somos">Quienes Somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="cta-button">Cotizar</a>
+        </nav>
+    </header>
+
+    <!-- Quienes Somos -->
+    <section class="about" id="quienes-somos">
+        <div class="about-container">
+            <h2 class="section-title">Quienes Somos</h2>
+            <div class="about-content">
+                <p class="about-intro">
+                    <strong>INGENIERÍA DE CONSTRUCCIONES S.A.S.</strong> fue fundada en el año 1999. A través de estos años hemos participado en la construcción de diferentes obras civiles como vías, puentes, edificaciones, coliseos, parques, entre otros.
+                </p>
+                <p>
+                    Actualmente ofrecemos servicios para la construcción de proyectos de infraestructura vial y construcción de edificaciones públicas y/o privadas.
+                </p>
+                <p>
+                    Somos reconocidos en el medio por nuestra amplia experiencia, enfocándonos en el cumplimiento, calidad y satisfacción de nuestros clientes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services" id="servicios">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-subtitle">Soluciones integrales de ingeniería civil</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('obras/puenteCaldas/image030__.jpg');"></div>
+                <div class="service-card-content">
+                    <h3>Ingeniería Civil</h3>
+                    <p>Diseño, planificación y ejecución de proyectos de infraestructura. Expertos en movimiento de tierras, pavimentación y estructuras.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('obras/carreteraLaMansa/image026.jpg');"></div>
+                <div class="service-card-content">
+                    <h3>Infraestructura Vial</h3>
+                    <p>Desarrollo de carreteras, autopistas y vías urbanas con las más altas especificaciones técnicas y estándares de calidad.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('obras/puenteHatillo/image001.png');"></div>
+                <div class="service-card-content">
+                    <h3>Estructuras</h3>
+                    <p>Diseño y construcción de estructuras civiles, puentes, túneles y obras de arte con tecnología de punta.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('obras/puenteArenera/image007.png');"></div>
+                <div class="service-card-content">
+                    <h3>Topografía y Estudios</h3>
+                    <p>Levantamientos topográficos, estudios de suelos y análisis técnicos para la planificación de proyectos.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('obras/coliseoSabaneta/image016.png');"></div>
+                <div class="service-card-content">
+                    <h3>Gestión de Proyectos</h3>
+                    <p>Administración integral de proyectos de construcción con metodologías probadas y equipo experimentado.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('obras/gimnasiosYParques/image031.png');"></div>
+                <div class="service-card-content">
+                    <h3>Consultoría</h3>
+                    <p>Asesoría técnica especializada para la optimización de procesos constructivos y desarrollo de proyectos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="projects" id="galeria">
+        <h2 class="section-title">Galería de Proyectos</h2>
+        <p class="section-subtitle">Nuestros trabajos hablan por nosotros</p>
+        
+        <div class="projects-grid">
+            <!-- Puente Hatillo -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="0">
+                        <div class="project-slide" style="background-image: url('obras/puenteHatillo/image001.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteHatillo/image002.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(0, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(0, 1)">›</button>
+                    <div class="slider-dots" id="dots-0"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Puente Hatillo</h3>
+                    <p>Construcción de puente con todas las especificaciones técnicas.</p>
+                </div>
+            </div>
+
+            <!-- Puente Caldas -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="1">
+                        <div class="project-slide" style="background-image: url('obras/puenteCaldas/image030__.jpg');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteCaldas/image032.jpg');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteCaldas/image034.jpg');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(1, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(1, 1)">›</button>
+                    <div class="slider-dots" id="dots-1"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Puente Caldas</h3>
+                    <p>Proyecto de infraestructura vial con diseño estructural avanzado.</p>
+                </div>
+            </div>
+
+            <!-- Coliseo Sabaneta -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="2">
+                        <div class="project-slide" style="background-image: url('obras/coliseoSabaneta/image016.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/coliseoSabaneta/image017.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(2, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(2, 1)">›</button>
+                    <div class="slider-dots" id="dots-2"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Coliseo Sabaneta</h3>
+                    <p>Construcción de infraestructura deportiva y recreativa.</p>
+                </div>
+            </div>
+
+            <!-- Gimnasios y Parques -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="3">
+                        <div class="project-slide" style="background-image: url('obras/gimnasiosYParques/image031.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/gimnasiosYParques/image033.jpg');"></div>
+                        <div class="project-slide" style="background-image: url('obras/gimnasiosYParques/image035.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/gimnasiosYParques/image036.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(3, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(3, 1)">›</button>
+                    <div class="slider-dots" id="dots-3"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Gimnasios y Parques</h3>
+                    <p>Desarrollo de espacios recreativos y deportivos para la comunidad.</p>
+                </div>
+            </div>
+
+            <!-- Puente La Miel -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="4">
+                        <div class="project-slide" style="background-image: url('obras/puenteLaMiel/image005.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteLaMiel/image006.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(4, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(4, 1)">›</button>
+                    <div class="slider-dots" id="dots-4"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Puente La Miel</h3>
+                    <p>Construcción de puente con técnicas de ingeniería moderna.</p>
+                </div>
+            </div>
+
+            <!-- Carretera La Mansa -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="5">
+                        <div class="project-slide" style="background-image: url('obras/carreteraLaMansa/image026.jpg');"></div>
+                        <div class="project-slide" style="background-image: url('obras/carreteraLaMansa/image028_.jpg');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(5, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(5, 1)">›</button>
+                    <div class="slider-dots" id="dots-5"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Carretera La Mansa</h3>
+                    <p>Proyecto de infraestructura vial con alta calidad constructiva.</p>
+                </div>
+            </div>
+
+            <!-- Puente Cocorollo -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="6">
+                        <div class="project-slide" style="background-image: url('obras/puenteCocorollo/image003.png');"></div>
+                    </div>
+                    <div class="slider-dots" id="dots-6"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Puente Cocorollo</h3>
+                    <p>Construcción de puente con diseño estructural avanzado.</p>
+                </div>
+            </div>
+
+            <!-- Puente Arenera -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="7">
+                        <div class="project-slide" style="background-image: url('obras/puenteArenera/image007.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteArenera/image008.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteArenera/image009.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(7, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(7, 1)">›</button>
+                    <div class="slider-dots" id="dots-7"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Puente Arenera</h3>
+                    <p>Proyecto de infraestructura vial con alta calidad constructiva.</p>
+                </div>
+            </div>
+
+            <!-- Puente Retorno Caldas -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="8">
+                        <div class="project-slide" style="background-image: url('obras/puenteRetornoCaldas/image010.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteRetornoCaldas/image011.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteRetornoCaldas/image012.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(8, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(8, 1)">›</button>
+                    <div class="slider-dots" id="dots-8"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Puente Retorno Caldas</h3>
+                    <p>Construcción de puente con todas las especificaciones técnicas.</p>
+                </div>
+            </div>
+
+            <!-- Puente La Truchera -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="9">
+                        <div class="project-slide" style="background-image: url('obras/puenteLaTruchera/image042.jpg');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteLaTruchera/image044.jpg');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteLaTruchera/image046.jpg');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(9, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(9, 1)">›</button>
+                    <div class="slider-dots" id="dots-9"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Puente La Truchera</h3>
+                    <p>Proyecto de infraestructura vial con diseño estructural avanzado.</p>
+                </div>
+            </div>
+
+            <!-- Puente Indigo -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="10">
+                        <div class="project-slide" style="background-image: url('obras/puenteIndigo/image048.jpg');"></div>
+                        <div class="project-slide" style="background-image: url('obras/puenteIndigo/image050.jpg');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(10, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(10, 1)">›</button>
+                    <div class="slider-dots" id="dots-10"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Puente Indigo</h3>
+                    <p>Construcción de puente con técnicas de ingeniería moderna.</p>
+                </div>
+            </div>
+
+            <!-- Parque Artista -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="11">
+                        <div class="project-slide" style="background-image: url('obras/parqueArtista/image013.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/parqueArtista/image014.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/parqueArtista/image015.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(11, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(11, 1)">›</button>
+                    <div class="slider-dots" id="dots-11"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Parque Artista</h3>
+                    <p>Desarrollo de espacios recreativos y deportivos para la comunidad.</p>
+                </div>
+            </div>
+
+            <!-- Placa Huella Concordia -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="12">
+                        <div class="project-slide" style="background-image: url('obras/placaHuellaConcordia/image018.jpg');"></div>
+                        <div class="project-slide" style="background-image: url('obras/placaHuellaConcordia/image020.jpg');"></div>
+                        <div class="project-slide" style="background-image: url('obras/placaHuellaConcordia/image022.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/placaHuellaConcordia/image024.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/placaHuellaConcordia/image026.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(12, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(12, 1)">›</button>
+                    <div class="slider-dots" id="dots-12"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Placa Huella Concordia</h3>
+                    <p>Proyecto de infraestructura vial con alta calidad constructiva.</p>
+                </div>
+            </div>
+
+            <!-- Piscina Venecia -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="13">
+                        <div class="project-slide" style="background-image: url('obras/piscinaVenecia/image028.jpg');"></div>
+                        <div class="project-slide" style="background-image: url('obras/piscinaVenecia/image030.jpg');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(13, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(13, 1)">›</button>
+                    <div class="slider-dots" id="dots-13"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Piscina Venecia</h3>
+                    <p>Construcción de infraestructura deportiva y recreativa.</p>
+                </div>
+            </div>
+
+            <!-- Peaje Pacifico -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="14">
+                        <div class="project-slide" style="background-image: url('obras/peajePacifico/image069.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/peajePacifico/image070.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(14, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(14, 1)">›</button>
+                    <div class="slider-dots" id="dots-14"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Peaje Pacifico</h3>
+                    <p>Proyecto de infraestructura vial con diseño estructural avanzado.</p>
+                </div>
+            </div>
+
+            <!-- Muros Pacifico II -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="15">
+                        <div class="project-slide" style="background-image: url('obras/murosPacificoII/image066.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/murosPacificoII/image067.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/murosPacificoII/image068.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(15, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(15, 1)">›</button>
+                    <div class="slider-dots" id="dots-15"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Muros Pacifico II</h3>
+                    <p>Construcción de muros de contención con técnicas de ingeniería moderna.</p>
+                </div>
+            </div>
+
+            <!-- Centro Control Pacifico -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-slider" data-slider="16">
+                        <div class="project-slide" style="background-image: url('obras/centroControlPacifico/image071.png');"></div>
+                        <div class="project-slide" style="background-image: url('obras/centroControlPacifico/image072.png');"></div>
+                    </div>
+                    <button class="slider-controls slider-prev" onclick="changeSlide(16, -1)">‹</button>
+                    <button class="slider-controls slider-next" onclick="changeSlide(16, 1)">›</button>
+                    <div class="slider-dots" id="dots-16"></div>
+                </div>
+                <div class="project-overlay">
+                    <h3>Centro Control Pacifico</h3>
+                    <p>Construcción de infraestructura de control y gestión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contáctenos</h2>
+                <p>Estamos listos para hacer realidad tu proyecto. Contáctanos para una cotización personalizada.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span style="font-size: 1.5rem;">📍</span>
+                        <div>
+                            <strong>Dirección</strong><br>
+                            CALLE 126 SUR NRO 48 – 08<br>
+                            CALDAS - ANTIOQUIA
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span style="font-size: 1.5rem;">📞</span>
+                        <div>
+                            <strong>Teléfono</strong><br>
+                            3218129405 – 3218129402 – (4) 5883607
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span style="font-size: 1.5rem;">✉️</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            contacto@indeco.com.co
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input type="tel" name="telefono" placeholder="+57 123 456 7890" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Mensaje</label>
+                    <textarea name="message" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Indeco. Todos los derechos reservados.</p>
+        <p>Ingeniería Civil & Construcción</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+            Desarrollado por <a href="https://www.geniostecnologicos.com" target="_blank" style="color: #FF6B00; text-decoration: none;">Genios Tecnológicos</a>
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const formData = {
+                name: form.querySelector('input[name="name"]').value,
+                email: form.querySelector('input[name="email"]').value,
+                telefono: form.querySelector('input[name="telefono"]').value,
+                message: form.querySelector('textarea[name="message"]').value,
+                companyEmail: 'contacto@indeco.com.co',
+                website: 'indeco.com',
+                subject: 'Correo enviado desde indeco.com',
+                type: 'contact'
+            };
+
+            const submitButton = form.querySelector('.btn-submit');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Enviando...';
+            submitButton.disabled = true;
+
+            try {
+                const response = await fetch('https://mailer.geniostecnologicos.com:8070/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    alert('¡Gracias por contactarnos! Nos comunicaremos contigo pronto.');
+                    form.reset();
+                } else {
+                    throw new Error('Error al enviar el mensaje');
+                }
+            } catch (error) {
+                alert('Hubo un error al enviar tu mensaje. Por favor, intenta nuevamente.');
+                console.error('Error:', error);
+            } finally {
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }
+        });
+
+        // Slider functionality
+        const sliderStates = {};
+        
+        function initSliders() {
+            const sliders = document.querySelectorAll('.project-slider');
+            sliders.forEach((slider, index) => {
+                const slides = slider.querySelectorAll('.project-slide');
+                sliderStates[index] = 0;
+                
+                // Create dots
+                const dotsContainer = document.getElementById(`dots-${index}`);
+                if (dotsContainer && slides.length > 1) {
+                    dotsContainer.innerHTML = '';
+                    slides.forEach((_, dotIndex) => {
+                        const dot = document.createElement('div');
+                        dot.className = `slider-dot ${dotIndex === 0 ? 'active' : ''}`;
+                        dot.onclick = () => goToSlide(index, dotIndex);
+                        dotsContainer.appendChild(dot);
+                    });
+                }
+            });
+        }
+
+        function changeSlide(sliderIndex, direction) {
+            const slider = document.querySelector(`[data-slider="${sliderIndex}"]`);
+            const slides = slider.querySelectorAll('.project-slide');
+            const totalSlides = slides.length;
+            
+            if (!sliderStates.hasOwnProperty(sliderIndex)) {
+                sliderStates[sliderIndex] = 0;
+            }
+            
+            sliderStates[sliderIndex] += direction;
+            
+            if (sliderStates[sliderIndex] < 0) {
+                sliderStates[sliderIndex] = totalSlides - 1;
+            } else if (sliderStates[sliderIndex] >= totalSlides) {
+                sliderStates[sliderIndex] = 0;
+            }
+            
+            updateSlider(sliderIndex);
+        }
+
+        function goToSlide(sliderIndex, slideIndex) {
+            sliderStates[sliderIndex] = slideIndex;
+            updateSlider(sliderIndex);
+        }
+
+        function updateSlider(sliderIndex) {
+            const slider = document.querySelector(`[data-slider="${sliderIndex}"]`);
+            const slides = slider.querySelectorAll('.project-slide');
+            const currentIndex = sliderStates[sliderIndex];
+            
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            // Update dots
+            const dotsContainer = document.getElementById(`dots-${sliderIndex}`);
+            if (dotsContainer) {
+                const dots = dotsContainer.querySelectorAll('.slider-dot');
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+        }
+
+        // Initialize sliders on page load
+        initSliders();
+    </script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573114453726" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 339.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56 81.2 56 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+</body>
+</html>
+
