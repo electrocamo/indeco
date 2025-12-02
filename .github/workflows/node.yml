@@ -1,0 +1,25 @@
+name: Deploy Static Website
+
+on:
+  push:
+    branches:
+      - main   # Cambia si tu rama principal se llama diferente
+
+jobs:
+  deploy:
+    name: Upload static website to Apache server
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy static files using rsync
+        uses: burnett01/rsync-deployments@5.2
+        with:
+          switches: -avzr --delete
+          path: ./               # Todos los archivos del repo
+          remote_path: /var/www/html/indeco/   # Ruta en el servidor
+          remote_host: ${{ secrets.SERVER_HOST }}
+          remote_user: ${{ secrets.SERVER_USER }}
+          remote_key: ${{ secrets.SERVER_SSH_KEY }}
